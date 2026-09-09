@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando seus cursos</title>
+    <link rel="stylesheet" href="005.CSS">
+</head>
+<body>
+    <h1>Mensagem reveladoras </h1>
+    <p>Digite o seu primeiro nome para vermos qual mensagem será pra voce hoje </p>
+    <input type="text" name="curso" id="txtcurso">
+    <input type="button" value="Verificar" onclick="pesquisar()">
+    <div id="res"></div>
+    <br>
+   
+
+    <script>
+        var cursoAtual = ""; 
+
+        
+            
+                function pesquisar() {
+                    var text = window.document.querySelector('input#txtcurso')
+                    var res = window.document.querySelector('div#res')
+        
+        
+
+            var curso = text.value
+            cursoAtual = curso // salva pra usar na função de confirmação
+
+            res.innerHTML = `<p>Você confirma que é o(a) ${curso}?</p>
+                <button onclick="confirmar()">Sim</button>`
+        }
+
+        function confirmar() {
+            var res = window.document.querySelector('div#res')
+
+            res.innerHTML = `<p>Verificando......</p>`
+
+            setTimeout(function() {
+                if (cursoAtual === "Yasmin") {
+                    res.innerHTML = `<p>Você tem que estudar !</p>`
+                }
+                else if (cursoAtual === "Alyne") {
+                    res.innerHTML = `<p>Vamos ir na academia que horas? </p>`
+                }
+                else if (cursoAtual === "Jamilson") {
+                    res.innerHTML = `<p>Vamos ir na bienal amanhã?</p>`
+                   
+                }
+                  
+           
+
+            }, 1000)
+        }
+    </script>
+</body>
+</html>
