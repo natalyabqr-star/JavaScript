@@ -1,4 +1,4 @@
-alert("Olá mundo")
+//alert("Olá mundo")
 
 //sintaxe
 
@@ -8,18 +8,37 @@ const string = 'Texto'
 const number =  10  //podeia entrar numeros diversos
 const boolean = true // pode ser true ou false
 
+//operadores 
+const a = 8
+const b = 2
+const soma = 8 + 2
+
+console.log(soma)
 
 //funções
 function salvarExibirNomeIdade () {
-    let nome = prompt('Olá, qual é seu nome') // o let serve para guardar e se preciso podemos manipular
-    let idade = prompt('Oi' + nome + ', agora, qual é a sua idade?')
+    let nome = prompt('Olá, qual é seu nome?') // o let serve para guardar e se preciso podemos manipular
+    let cidade = prompt(' Olá ' +  nome  + ', onde você mora')
+    let faculdade = prompt( ' Você estuda aonde? ')
 
-    document.body.innerHTML = 'Seu nome é' + nome + "e voce tem" + idade
+    document.body.innerHTML = 'Seu nome é ' + nome + " e você mora em " + cidade + '.' + ' você estuda ' + faculdade + '.'
 }
-salvarExibirNomeIdade()
+//salvarExibirNomeIdade()
 
 // estrutura de controle 
+function demonstrarEstruturas() {
+    const nome = "Mario"
+    const idade = 67
+
+    if (idade >= 18) {
+        console.log("Você é maior de idade")
+    } else {
+        console.log('Você é menor de idade')
+    }
+}
+demonstrarEstruturas()
 
 // arrays
+
 
 // objetos 
