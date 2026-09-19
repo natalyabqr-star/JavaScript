@@ -13,7 +13,7 @@ const a = 8
 const b = 2
 const soma = 8 + 2
 
-console.log(soma)
+//console.log(soma)
 
 //funções
 function salvarExibirNomeIdade () {
@@ -36,9 +36,41 @@ function demonstrarEstruturas() {
         console.log('Você é menor de idade')
     }
 }
-demonstrarEstruturas()
+//demonstrarEstruturas()
+//objetos 
+let pessoas = {
+    nome: "pessoa",
+    sobrenome: "prebianchi",
+    idade: 67,
+}
+
+
+
+
+
+
+
 
 // arrays
-
+let pessoas = [
+    {
+        nome: 'Sheila',
+        sobrenome: 'Santana',
+        idade: 67
+    },
+       {
+        nome: 'Maria',
+        sobrenome: 'Eduarda',
+        idade: 11
+    },
+       {
+        nome: 'José',
+        sobrenome: 'Santos',
+        idade: 42
+    }
+]
+console.log(pessoas[2].sobrenome)
+console.log(pessoas[2].idade)
+console.log(pessoas[2].nome)
 
 // objetos 
