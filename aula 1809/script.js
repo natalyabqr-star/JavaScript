@@ -75,7 +75,7 @@ console.log(pessoas[2].nome)*/
 
 //testando outro jeito da função if e else: switc
 
-let agora = new Date()
+/*let agora = new Date()
 let diaSem = agora.getDay()
 
 diaSem = 5
@@ -105,4 +105,15 @@ switch(diaSem) {
     default:
         console.log('[ERRO] Dia inválido')
         break
+}*/
+
+let agora = new Date
+let horas = agora.getHours()
+console.log(`Agora são exatamente ${horas} horas`)
+if (horas < 12) {
+    console.log(`Bom dia`)
+} else if (horas <= 12) { 
+    console.log(`Boa tarde`)
+} else {
+    console.log(`Boa noite`)
 }
