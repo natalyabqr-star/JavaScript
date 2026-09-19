@@ -38,11 +38,11 @@ function demonstrarEstruturas() {
 }
 //demonstrarEstruturas()
 //objetos 
-let pessoas = {
+/*let pessoas = {
     nome: "pessoa",
     sobrenome: "prebianchi",
     idade: 67,
-}
+}*/
 
 
 
@@ -51,8 +51,8 @@ let pessoas = {
 
 
 
-// arrays
-let pessoas = [
+// arrays 
+/*let pessoas = [
     {
         nome: 'Sheila',
         sobrenome: 'Santana',
@@ -69,8 +69,40 @@ let pessoas = [
         idade: 42
     }
 ]
-console.log(pessoas[2].sobrenome)
+console.log(pessoas[0].sobrenome)
 console.log(pessoas[2].idade)
-console.log(pessoas[2].nome)
+console.log(pessoas[2].nome)*/
 
-// objetos 
+//testando outro jeito da função if e else: switc
+
+let agora = new Date()
+let diaSem = agora.getDay()
+
+diaSem = 5
+
+switch(diaSem) {
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+        break
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Qurata')
+        break
+    case 4:
+        console.log('Quinta')
+        break
+    case 5:
+        console.log('Sexta')
+        break
+    case 6: 
+         console.log('Sábado')
+         break
+    default:
+        console.log('[ERRO] Dia inválido')
+        break
+}
