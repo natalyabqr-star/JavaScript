@@ -19,3 +19,4 @@ while (contador < 10) {
     console.log("Fim do laço")
 
 }
+
